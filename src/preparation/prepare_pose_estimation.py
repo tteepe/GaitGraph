@@ -7,7 +7,8 @@ import torchvision.transforms as transforms
 
 from tqdm import tqdm
 
-from datasets import DatasetDetections, CropToBox
+from datasets import DatasetDetections
+from datasets.augmentation import CropToBox
 from pose_estimator.pose_estimator_hrnet import PoseEstimatorHRNet
 from pose_estimator.utils import *
 from visualization.utils import keypoints
@@ -19,7 +20,7 @@ def pose_estimation(dataset_base_path, detection_list, output_file):
 
     pose_estimator = PoseEstimatorHRNet(
         config_path="../pose_estimator/inference-config.yaml",
-        weights_path="../../weights/pose_hrnet_w32_384x288.pth",
+        weights_path="../../models/pose_hrnet_w32_384x288.pth",
     )
     transform_normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
 

@@ -228,8 +228,8 @@ if __name__ == "__main__":
     if opt.exp_name:
         opt.model_name += "_" + opt.exp_name
 
-    opt.model_path = f"../save/supcon_{opt.dataset}_models"
-    opt.tb_path = f"../save/supcon_{opt.dataset}_tensorboard/{opt.model_name}"
+    opt.model_path = f"../save/{opt.dataset}_models"
+    opt.tb_path = f"../save/{opt.dataset}_tensorboard/{opt.model_name}"
 
     opt.save_folder = os.path.join(opt.model_path, opt.model_name)
     if not os.path.isdir(opt.save_folder):

@@ -50,5 +50,5 @@ venv.bak/
 # Project Specific
 models/*.weights
 models/*.pth
-data/*
 data/*.csv
+save/*

@@ -1,10 +1,13 @@
 #!/bin/bash
 # Download weights for vanilla YOLOv3
-wget -c https://pjreddie.com/media/files/yolov3.weights
+curl -O https://pjreddie.com/media/files/yolov3.weights
 # Download weights for tiny YOLOv3
-wget -c https://pjreddie.com/media/files/yolov3-tiny.weights
+curl -O https://pjreddie.com/media/files/yolov3-tiny.weights
 ## Download weights for backbone network
-#wget -c https://pjreddie.com/media/files/darknet53.conv.74
+#curl -O https://pjreddie.com/media/files/darknet53.conv.74
+
+# Download pre-trained weights
+curl -LJO https://github.com/tteepe/GaitGraph/releases/download/v0.1/gaitgraph_resgcn-n39-r8_coco_seq_60.pth
 
 print "#############################################################"
 print "######## Weights for HRNet Pose Estimation need to ##########"

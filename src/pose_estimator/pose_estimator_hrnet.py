@@ -1,6 +1,7 @@
 import torch
 import torchvision.transforms as transforms
 from PIL import Image
+import argparse
 
 from datasets.preparation import box_to_center_scale
 from pose_estimator import model_hrnet
@@ -15,8 +16,10 @@ class PoseEstimatorHRNet:
         self.config_path = config_path
         self.weights_path = weights_path
 
+        args = argparse.Namespace()
         args.cfg = self.config_path
         # opt expected by supporting codebase
+        args.opt = ''
         args.modelDir = ''
         args.logDir = ''
         args.dataDir = ''
@@ -66,7 +69,6 @@ class PoseEstimatorHRNet:
 
 
 if __name__ == "__main__":
-    import argparse
     import matplotlib.pyplot as plt
     import matplotlib.patches as patches
     from matplotlib.ticker import NullLocator

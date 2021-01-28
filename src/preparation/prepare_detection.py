@@ -7,8 +7,7 @@ from tqdm import tqdm
 
 from datasets import DatasetSimple
 from detector.detector_yolov3 import DetectorYOLOv3
-from detector.detector_utils import preprocess_image
-from detector.utils import non_max_suppression, rescale_boxes
+from detector.utils import non_max_suppression, rescale_boxes, preprocess_image
 
 Tensor = torch.cuda.FloatTensor if torch.cuda.is_available() else torch.FloatTensor
 
