@@ -95,7 +95,7 @@ The following parts of the code are borrowed from other projects. Thanks for the
 - SupCon Loss: [HobbitLong/SupContrast](https://github.com/HobbitLong/SupContrast)
 
 ## <a name="CitingGaitGraph"></a>Citing GaitGraph
-If you use Densepose, please use the following BibTeX entry.
+If you use GaitGraph, please use the following BibTeX entry.
 
 ```
 @misc{teepe2021gaitgraph,
