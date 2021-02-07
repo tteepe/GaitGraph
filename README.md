@@ -6,7 +6,7 @@ __GaitGraph: Graph Convolutional Network for Skeleton-Based Gait Recognition__
 [Torben Teepe](https://github.com/tteepe), Ali Khan, Johannes Gilg, [Fabian Herzog](https://github.com/fubel),
 Stefan Hörmann 
 
-[[`arXiv`](https://arxiv.org/abs/2101.11228)] [[`BibTeX`](#CitingGaitGraph)]
+[![arxiv](https://img.shields.io/badge/arXiv-2101.11228-red)](https://arxiv.org/abs/2101.11228) [![BibTeX](https://img.shields.io/badge/Cite-BibTeX-yellow)](#CitingGaitGraph)
 
 ![Pipeline](images/pipeline.png)
 
