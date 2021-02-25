@@ -5,7 +5,7 @@ python3 train.py casia-b ../data/casia-b_pose_train_valid.csv \
                  --batch_size 128 \
                  --batch_size_validation 256 \
                  --embedding_layer_size 128 \
-                 --epochs 500 \
-                 --learning_rate 1e-4\
-                 --weight_decay 1e-4 \
-                 --temp 0.01
+                 --epochs 300 \
+                 --learning_rate 1e-2 \
+                 --temp 0.01 \
+                 --network_name resgcn-n39-r8
