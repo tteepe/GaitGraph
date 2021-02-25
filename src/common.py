@@ -121,7 +121,7 @@ def get_model_resgcn(graph, opt):
         "num_channel": 3 if not opt.use_multi_branch else 6,
         "parts": graph.parts,
     }
-    return models.ResGCNv1.create(opt.network_name, **model_args)
+    return models.ResGCNv1.create(opt.network_name, **model_args), model_args
 
 
 def get_trainer(model, opt, steps_per_epoch):

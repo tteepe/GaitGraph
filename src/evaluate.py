@@ -167,7 +167,7 @@ def main():
     print(f"Data loaded: {len(data_loader)} batches")
 
     # Init model
-    model = get_model_resgcn(graph, opt)
+    model, model_args = get_model_resgcn(graph, opt)
 
     if torch.cuda.is_available():
         model.cuda()

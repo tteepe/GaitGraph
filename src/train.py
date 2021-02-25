@@ -125,7 +125,7 @@ def main(opt):
     )
 
     # Model & criterion
-    model = get_model_resgcn(graph, opt)
+    model, model_args = get_model_resgcn(graph, opt)
     criterion = SupConLoss(temperature=opt.temp)
 
     print("# parameters: ", count_parameters(model))
