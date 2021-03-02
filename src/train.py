@@ -130,6 +130,9 @@ def main(opt):
 
     print("# parameters: ", count_parameters(model))
 
+    if torch.cuda.device_count() > 1:
+        model = torch.nn.DataParallel(model, opt.gpus)
+
     if opt.cuda:
         model.cuda()
         criterion.cuda()
