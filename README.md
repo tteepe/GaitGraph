@@ -6,7 +6,7 @@ __GaitGraph: Graph Convolutional Network for Skeleton-Based Gait Recognition__
 [Torben Teepe](https://github.com/tteepe), Ali Khan, Johannes Gilg, [Fabian Herzog](https://github.com/fubel),
 Stefan Hörmann 
 
-[![arxiv](https://img.shields.io/badge/arXiv-2101.11228-red)](https://arxiv.org/abs/2101.11228) [![BibTeX](https://img.shields.io/badge/Cite-BibTeX-yellow)](#CitingGaitGraph)
+[![arxiv](https://img.shields.io/badge/arXiv-2101.11228-red)](https://arxiv.org/abs/2101.11228) [![BibTeX](https://img.shields.io/badge/cite-BibTeX-yellow)](#CitingGaitGraph)
 
 ![Pipeline](images/pipeline.png)
 
@@ -28,7 +28,7 @@ cd data
 sh ./download_data.sh
 ```
 
-Optional:
+#### Run preprocessing
 If you choose to run the preprocessing, [download](http://www.cbsr.ia.ac.cn/english/Gait%20Databases.asp) the dataset and run the following commands.
 ```shell
 # Download required weights
@@ -37,7 +37,7 @@ sh ./download_weights.sh
 
 # <PATH_TO_CASIA-B> should be something like: /home/ ... /datasets/CASIA/casia-b/all_frames/
 cd <PATH_TO_CASIA-B>
-find . -type f -regex ".*\.jpg" > casia-b_all_frames.csv
+find . -type f -regex ".*\.jpg" -print | sort > casia-b_all_frames.csv
 cp casia-b_all_frames.csv <PATH_TO_REPO>/data
 
 cd <PATH_TO_REPO>/src
