@@ -28,17 +28,24 @@ cd data
 sh ./download_data.sh
 ```
 
-#### Run preprocessing
+Optional:
 If you choose to run the preprocessing, [download](http://www.cbsr.ia.ac.cn/english/Gait%20Databases.asp) the dataset and run the following commands.
 ```shell
 # Download required weights
 cd models
 sh ./download_weights.sh
 
-# <PATH_TO_CASIA-B> should be something like: /home/ ... /datasets/CASIA/casia-b/all_frames/
+# Copy extraction script
+# <PATH_TO_CASIA-B> should be something like: /home/ ... /datasets/CASIA_Gait_Dataset/DatasetB
+cd ../data
+cp extract_frames.sh <PATH_TO_CASIA-B>
+
 cd <PATH_TO_CASIA-B>
-find . -type f -regex ".*\.jpg" -print | sort > casia-b_all_frames.csv
-cp casia-b_all_frames.csv <PATH_TO_REPO>/data
+mkdir frames
+sh extract_frames.sh
+cd frames
+find . -type f -regex ".*\.jpg" -print | sort | grep -v bkgrd > ../casia-b_all_frames.csv
+cp ../casia-b_all_frames.csv <PATH_TO_REPO>/data
 
 cd <PATH_TO_REPO>/src
 export PYTHONPATH=${PWD}:$PYTHONPATH
