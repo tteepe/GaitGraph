@@ -9,9 +9,9 @@ curl -O https://pjreddie.com/media/files/yolov3-tiny.weights --header "Referer: 
 # Download pre-trained weights
 curl -LJO https://github.com/tteepe/GaitGraph/releases/download/v0.1/gaitgraph_resgcn-n39-r8_coco_seq_60.pth
 
-print "#############################################################"
-print "######## Weights for HRNet Pose Estimation need to ##########"
-print "######## be downloaded manually from here:         ##########"
-print "######## https://drive.google.com/drive/folders/1nzM_OBV9LbAEA7HClC0chEyf_7ECDXYA"
-print "######## Files: pose_hrnet_*.pth                   ##########"
-print "#############################################################"
+echo "#############################################################"
+echo "######## Weights for HRNet Pose Estimation need to ##########"
+echo "######## be downloaded manually from here:         ##########"
+echo "######## https://drive.google.com/drive/folders/1nzM_OBV9LbAEA7HClC0chEyf_7ECDXYA"
+echo "######## Files: pose_hrnet_*.pth                   ##########"
+echo "#############################################################"
