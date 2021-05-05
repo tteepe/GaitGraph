@@ -55,13 +55,10 @@ def detection(dataset_base_path, image_list, output_file):
                 box_w = x2 - x1
                 box_h = y2 - y1
 
-                if int(cls_pred) == 0:
+                if int(cls_pred) == 0 and float(conf) > 0.96:
                     human_candidates[names[j]].append([x1, y1, box_w, box_h])
 
-            if len(human_candidates[names[j]]) < 1:
-                print(
-                    f"{names[j]}: Invalid detections ({len(human_candidates[names[j]])}), skipping"
-                )
+            if len(human_candidates[names[j]]) != 1:
                 continue
 
             writer.writerow([names[j]] + human_candidates[names[j]][0])
