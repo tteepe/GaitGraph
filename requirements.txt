@@ -7,7 +7,7 @@ tabulate==0.8.7
 tensorflow==2.5.0
 tensorboard==2.4.0
 ray[tune]==1.1.0
-pillow==8.1.1
+pillow==8.2.0
 tqdm==4.56.0
 opencv-python~=4.5
 jupyter==1.0.0
