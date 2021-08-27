@@ -106,9 +106,9 @@ If you use GaitGraph, please use the following BibTeX entry.
 
 ```
 @inproceedings{teepe2021gaitgraph,
-  author={Teepe, Torben and Khan, Ali and Gilg, Johannes and Herzog, Fabian and Hörmann, Stefan and Rigoll, Gerhard},
+  author={Teepe, Torben and Khan, Ali and Gilg, Johannes and Herzog, Fabian and H\"ormann, Stefan and Rigoll, Gerhard},
   booktitle={2021 IEEE International Conference on Image Processing (ICIP)}, 
-  title={{G}ait{G}raph: Graph Convolutional Network for Skeleton-Based Gait Recognition}, 
+  title={Gait{G}raph: Graph Convolutional Network for Skeleton-Based Gait Recognition}, 
   year={2021},
   pages={2314-2318},
   doi={10.1109/ICIP42928.2021.9506717}
