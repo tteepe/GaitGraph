@@ -6,7 +6,7 @@ __GaitGraph: Graph Convolutional Network for Skeleton-Based Gait Recognition__
 [Torben Teepe](https://github.com/tteepe), Ali Khan, Johannes Gilg, [Fabian Herzog](https://github.com/fubel),
 Stefan Hörmann 
 
-[![arxiv](https://img.shields.io/badge/arXiv-2101.11228-red)](https://arxiv.org/abs/2101.11228) [![BibTeX](https://img.shields.io/badge/cite-BibTeX-yellow)](#CitingGaitGraph) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/gaitgraph-graph-convolutional-network-for/multiview-gait-recognition-on-casia-b)](https://paperswithcode.com/sota/multiview-gait-recognition-on-casia-b?p=gaitgraph-graph-convolutional-network-for)
+[![DOI:10.1109/ICIP42928.2021.9506717](https://img.shields.io/badge/DOI-10.1109%2FICIP42928.2021.9506717-blue)](https://doi.org/10.1109/ICIP42928.2021.9506717) [![arxiv](https://img.shields.io/badge/arXiv-2101.11228-red)](https://arxiv.org/abs/2101.11228) [![BibTeX](https://img.shields.io/badge/cite-BibTeX-yellow)](#CitingGaitGraph) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/gaitgraph-graph-convolutional-network-for/multiview-gait-recognition-on-casia-b)](https://paperswithcode.com/sota/multiview-gait-recognition-on-casia-b?p=gaitgraph-graph-convolutional-network-for)
 
 ![Pipeline](images/pipeline.png)
 
@@ -105,12 +105,12 @@ The following parts of the code are borrowed from other projects. Thanks for the
 If you use GaitGraph, please use the following BibTeX entry.
 
 ```
-@misc{teepe2021gaitgraph,
-      title={GaitGraph: Graph Convolutional Network for Skeleton-Based Gait Recognition}, 
-      author={Torben Teepe and Ali Khan and Johannes Gilg and Fabian Herzog and Stefan H\"ormann and Gerhard Rigoll},
-      year={2021},
-      eprint={2101.11228},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@inproceedings{teepe2021gaitgraph,
+  author={Teepe, Torben and Khan, Ali and Gilg, Johannes and Herzog, Fabian and Hörmann, Stefan and Rigoll, Gerhard},
+  booktitle={2021 IEEE International Conference on Image Processing (ICIP)}, 
+  title={{G}ait{G}raph: Graph Convolutional Network for Skeleton-Based Gait Recognition}, 
+  year={2021},
+  pages={2314-2318},
+  doi={10.1109/ICIP42928.2021.9506717}
 }
 ```
