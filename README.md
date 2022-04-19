@@ -1,4 +1,16 @@
 # GaitGraph
+
+
+> __Check out our new version [GaitGraph2](https://github.com/tteepe/GaitGraph2)__!
+> 
+> With support for OUMVLP-Pose Dataset, In-Memory Datasets & PyTorch Lightning
+> 
+> _Towards a Deeper Understanding of Skeleton-based Gait Recognition_
+> 
+> [![arxiv](https://img.shields.io/badge/arXiv-2204.07855-red)](https://arxiv.org/abs/2204.07855)
+
+
+
 This repository contains the PyTorch code for:
 
 __GaitGraph: Graph Convolutional Network for Skeleton-Based Gait Recognition__
